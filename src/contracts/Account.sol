@@ -4,8 +4,8 @@ pragma solidity ^0.8.0;
 
 contract Account {
 
-    address public admin; // Storing the address of the admin - SIA to ensure these functions can be invoked only by the admin 
-    mapping (address => bool) public accountStatus; // Storing the admin of the contract
+    address public admin;
+    mapping (address => bool) public accountStatus;
 
     event AccountStatusUpdate(address target, bool frozen);
 
